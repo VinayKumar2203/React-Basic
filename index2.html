@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create UI With React API</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+  <script>
+	    // Your task is to create a p element with text "Seize the day" and display it to DOM using React and ReactDOM
+        let element=React.createElement("p",{
+            class:"",
+            children:"vinay kumar",
+        })
+        let root=ReactDOM.createRoot(document.getElementById("root"))
+        root.render(element);
+  </script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>react-5 | example-2</title>
+    <style>
+        #main{
+            background-color: rgb(164, 164, 216);
+            display: flex;
+            justify-content: center;
+           
+            /* flex-wrap: wrap; */
+            height: 100px;
+            width: 70%;
+            margin: auto;
+            gap: 20px;
+            padding: 15px;
+        }
+        #main div:nth-child(1){
+            /* height: 100%; */
+            width: 80%;
+            background-color: red;
+            border: 2px solid black;
+        }
+        #main div:nth-child(2){
+            font-size: larger;
+            /* height: 100%; */
+            width: 80%;
+            background-color: yellow;
+            border: 2px solid rgb(138, 89, 89);
+
+        }
+        #main div:nth-child(3){
+            font-size: larger;
+            /* height: 100%; */
+            width: 80%;
+            background-color: green;
+            border: 2px solid rgb(231, 5, 5);
+
+        }
+        #main div:nth-child(4){
+            font-size: larger;
+            /* height: 100%; */
+            width: 80%;
+            background-color: rgb(158, 12, 12);
+            border: 2px solid rgb(231, 5, 5);
+
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+          let element=<div id="main">parent
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            </div>
+          const rootElement=ReactDOM.createRoot(document.getElementById("root"))
+          rootElement.render(element)
+    </script>
+  </body>
+</html>
